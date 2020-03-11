@@ -1,0 +1,1482 @@
+OPTIMIZATION O1
+
+STATIC LIBRARY:
+
+5_small_diff_compare
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_compare_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare
+------
+Real time: 0.140000
+System time: 0.000000
+User time: 0.010000
+------
+50_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare_remove
+------
+Real time: 0.140000
+System time: 0.000000
+User time: 0.000000
+------
+100_small_diff_compare
+------
+Real time: 0.300000
+System time: 0.010000
+User time: 0.020000
+------
+100_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+100_small_diff_compare_remove
+------
+Real time: 0.260000
+System time: 0.010000
+User time: 0.020000
+------
+5_medium_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_compare_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare
+------
+Real time: 0.170000
+System time: 0.000000
+User time: 0.010000
+------
+50_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare_remove
+------
+Real time: 0.140000
+System time: 0.000000
+User time: 0.010000
+------
+100_medium_diff_compare
+------
+Real time: 0.320000
+System time: 0.030000
+User time: 0.020000
+------
+100_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+100_medium_diff_compare_remove
+------
+Real time: 0.280000
+System time: 0.010000
+User time: 0.030000
+------
+5_big_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_compare_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare
+------
+Real time: 0.160000
+System time: 0.010000
+User time: 0.010000
+------
+50_big_diff_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare_remove
+------
+Real time: 0.160000
+System time: 0.000000
+User time: 0.020000
+------
+100_big_diff_compare
+------
+Real time: 0.330000
+System time: 0.010000
+User time: 0.040000
+------
+100_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.010000
+------
+100_big_diff_compare_remove
+------
+Real time: 0.310000
+System time: 0.010000
+User time: 0.040000
+------
+SHARED LIBRARY:
+
+5_small_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_compare_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare
+------
+Real time: 0.150000
+System time: 0.000000
+User time: 0.010000
+------
+50_small_diff_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare_remove
+------
+Real time: 0.130000
+System time: 0.000000
+User time: 0.000000
+------
+100_small_diff_compare
+------
+Real time: 0.290000
+System time: 0.020000
+User time: 0.010000
+------
+100_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+100_small_diff_compare_remove
+------
+Real time: 0.260000
+System time: 0.010000
+User time: 0.020000
+------
+5_medium_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_compare_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare
+------
+Real time: 0.160000
+System time: 0.000000
+User time: 0.010000
+------
+50_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare_remove
+------
+Real time: 0.140000
+System time: 0.000000
+User time: 0.020000
+------
+100_medium_diff_compare
+------
+Real time: 0.340000
+System time: 0.020000
+User time: 0.020000
+------
+100_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.010000
+------
+100_medium_diff_compare_remove
+------
+Real time: 0.310000
+System time: 0.010000
+User time: 0.030000
+------
+5_big_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_compare_remove
+------
+Real time: 0.020000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare
+------
+Real time: 0.150000
+System time: 0.000000
+User time: 0.020000
+------
+50_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare_remove
+------
+Real time: 0.160000
+System time: 0.000000
+User time: 0.020000
+------
+100_big_diff_compare
+------
+Real time: 0.340000
+System time: 0.020000
+User time: 0.030000
+------
+100_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.010000
+User time: 0.000000
+------
+100_big_diff_compare_remove
+------
+Real time: 0.310000
+System time: 0.020000
+User time: 0.030000
+------
+DYNAMIC LIBRARY:
+
+5_small_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_compare_remove
+------
+Real time: 0.020000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare
+------
+Real time: 0.150000
+System time: 0.010000
+User time: 0.000000
+------
+50_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare_remove
+------
+Real time: 0.130000
+System time: 0.010000
+User time: 0.000000
+------
+100_small_diff_compare
+------
+Real time: 0.290000
+System time: 0.030000
+User time: 0.000000
+------
+100_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+100_small_diff_compare_remove
+------
+Real time: 0.260000
+System time: 0.010000
+User time: 0.020000
+------
+5_medium_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_compare_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare
+------
+Real time: 0.160000
+System time: 0.010000
+User time: 0.010000
+------
+50_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare_remove
+------
+Real time: 0.150000
+System time: 0.000000
+User time: 0.010000
+------
+100_medium_diff_compare
+------
+Real time: 0.330000
+System time: 0.020000
+User time: 0.030000
+------
+100_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.010000
+User time: 0.000000
+------
+100_medium_diff_compare_remove
+------
+Real time: 0.290000
+System time: 0.010000
+User time: 0.030000
+------
+5_big_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_compare_remove
+------
+Real time: 0.020000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare
+------
+Real time: 0.160000
+System time: 0.000000
+User time: 0.020000
+------
+50_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare_remove
+------
+Real time: 0.150000
+System time: 0.020000
+User time: 0.000000
+------
+100_big_diff_compare
+------
+Real time: 0.340000
+System time: 0.010000
+User time: 0.040000
+------
+100_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+100_big_diff_compare_remove
+------
+Real time: 0.300000
+System time: 0.010000
+User time: 0.030000
+------
+OPTIMIZATION O2
+
+STATIC LIBRARY:
+
+5_small_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_compare_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare
+------
+Real time: 0.140000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare_remove
+------
+Real time: 0.130000
+System time: 0.010000
+User time: 0.000000
+------
+100_small_diff_compare
+------
+Real time: 0.280000
+System time: 0.010000
+User time: 0.010000
+------
+100_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+100_small_diff_compare_remove
+------
+Real time: 0.250000
+System time: 0.000000
+User time: 0.020000
+------
+5_medium_diff_compare
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_compare_remove
+------
+Real time: 0.020000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare
+------
+Real time: 0.160000
+System time: 0.010000
+User time: 0.010000
+------
+50_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare_remove
+------
+Real time: 0.160000
+System time: 0.020000
+User time: 0.000000
+------
+100_medium_diff_compare
+------
+Real time: 0.320000
+System time: 0.020000
+User time: 0.020000
+------
+100_medium_diff_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+100_medium_diff_compare_remove
+------
+Real time: 0.290000
+System time: 0.030000
+User time: 0.010000
+------
+5_big_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_compare_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare
+------
+Real time: 0.160000
+System time: 0.010000
+User time: 0.010000
+------
+50_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare_remove
+------
+Real time: 0.150000
+System time: 0.010000
+User time: 0.010000
+------
+100_big_diff_compare
+------
+Real time: 0.340000
+System time: 0.020000
+User time: 0.030000
+------
+100_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.010000
+User time: 0.000000
+------
+100_big_diff_compare_remove
+------
+Real time: 0.300000
+System time: 0.020000
+User time: 0.030000
+------
+SHARED LIBRARY:
+
+5_small_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_compare_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare
+------
+Real time: 0.130000
+System time: 0.010000
+User time: 0.000000
+------
+50_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare_remove
+------
+Real time: 0.130000
+System time: 0.010000
+User time: 0.000000
+------
+100_small_diff_compare
+------
+Real time: 0.280000
+System time: 0.010000
+User time: 0.020000
+------
+100_small_diff_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.010000
+------
+100_small_diff_compare_remove
+------
+Real time: 0.260000
+System time: 0.020000
+User time: 0.010000
+------
+5_medium_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_compare_remove
+------
+Real time: 0.020000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare
+------
+Real time: 0.160000
+System time: 0.010000
+User time: 0.000000
+------
+50_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare_remove
+------
+Real time: 0.160000
+System time: 0.000000
+User time: 0.010000
+------
+100_medium_diff_compare
+------
+Real time: 0.300000
+System time: 0.000000
+User time: 0.040000
+------
+100_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+100_medium_diff_compare_remove
+------
+Real time: 0.290000
+System time: 0.010000
+User time: 0.030000
+------
+5_big_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_compare_remove
+------
+Real time: 0.020000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare
+------
+Real time: 0.160000
+System time: 0.000000
+User time: 0.010000
+------
+50_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare_remove
+------
+Real time: 0.150000
+System time: 0.010000
+User time: 0.010000
+------
+100_big_diff_compare
+------
+Real time: 0.340000
+System time: 0.020000
+User time: 0.030000
+------
+100_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+100_big_diff_compare_remove
+------
+Real time: 0.300000
+System time: 0.030000
+User time: 0.020000
+------
+DYNAMIC LIBRARY:
+
+5_small_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_compare_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare
+------
+Real time: 0.140000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare_remove
+------
+Real time: 0.130000
+System time: 0.000000
+User time: 0.010000
+------
+100_small_diff_compare
+------
+Real time: 0.300000
+System time: 0.030000
+User time: 0.000000
+------
+100_small_diff_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+100_small_diff_compare_remove
+------
+Real time: 0.260000
+System time: 0.000000
+User time: 0.020000
+------
+5_medium_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_compare_remove
+------
+Real time: 0.020000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare
+------
+Real time: 0.160000
+System time: 0.010000
+User time: 0.010000
+------
+50_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare_remove
+------
+Real time: 0.160000
+System time: 0.010000
+User time: 0.010000
+------
+100_medium_diff_compare
+------
+Real time: 0.330000
+System time: 0.020000
+User time: 0.020000
+------
+100_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.010000
+------
+100_medium_diff_compare_remove
+------
+Real time: 0.300000
+System time: 0.010000
+User time: 0.030000
+------
+5_big_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_compare_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare
+------
+Real time: 0.160000
+System time: 0.010000
+User time: 0.010000
+------
+50_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare_remove
+------
+Real time: 0.190000
+System time: 0.010000
+User time: 0.020000
+------
+100_big_diff_compare
+------
+Real time: 0.430000
+System time: 0.030000
+User time: 0.030000
+------
+100_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+100_big_diff_compare_remove
+------
+Real time: 0.400000
+System time: 0.010000
+User time: 0.050000
+------
+OPTIMIZATION O3
+
+STATIC LIBRARY:
+
+5_small_diff_compare
+------
+Real time: 0.020000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_compare_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare
+------
+Real time: 0.140000
+System time: 0.010000
+User time: 0.000000
+------
+50_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare_remove
+------
+Real time: 0.140000
+System time: 0.000000
+User time: 0.000000
+------
+100_small_diff_compare
+------
+Real time: 0.300000
+System time: 0.010000
+User time: 0.020000
+------
+100_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+100_small_diff_compare_remove
+------
+Real time: 0.270000
+System time: 0.010000
+User time: 0.020000
+------
+5_medium_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_compare_remove
+------
+Real time: 0.020000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare
+------
+Real time: 0.170000
+System time: 0.010000
+User time: 0.010000
+------
+50_medium_diff_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare_remove
+------
+Real time: 0.150000
+System time: 0.010000
+User time: 0.010000
+------
+100_medium_diff_compare
+------
+Real time: 0.310000
+System time: 0.020000
+User time: 0.020000
+------
+100_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.010000
+------
+100_medium_diff_compare_remove
+------
+Real time: 0.320000
+System time: 0.020000
+User time: 0.020000
+------
+5_big_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_compare_remove
+------
+Real time: 0.020000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare
+------
+Real time: 0.140000
+System time: 0.010000
+User time: 0.010000
+------
+50_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare_remove
+------
+Real time: 0.160000
+System time: 0.010000
+User time: 0.010000
+------
+100_big_diff_compare
+------
+Real time: 0.320000
+System time: 0.020000
+User time: 0.030000
+------
+100_big_diff_remove
+------
+Real time: 0.010000
+System time: 0.010000
+User time: 0.000000
+------
+100_big_diff_compare_remove
+------
+Real time: 0.300000
+System time: 0.020000
+User time: 0.030000
+------
+SHARED LIBRARY:
+
+5_small_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_compare_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare
+------
+Real time: 0.150000
+System time: 0.000000
+User time: 0.010000
+------
+50_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.010000
+User time: 0.000000
+------
+50_small_diff_compare_remove
+------
+Real time: 0.130000
+System time: 0.000000
+User time: 0.000000
+------
+100_small_diff_compare
+------
+Real time: 0.300000
+System time: 0.020000
+User time: 0.010000
+------
+100_small_diff_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+100_small_diff_compare_remove
+------
+Real time: 0.270000
+System time: 0.010000
+User time: 0.020000
+------
+5_medium_diff_compare
+------
+Real time: 0.020000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_compare_remove
+------
+Real time: 0.020000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare
+------
+Real time: 0.140000
+System time: 0.000000
+User time: 0.010000
+------
+50_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare_remove
+------
+Real time: 0.140000
+System time: 0.000000
+User time: 0.020000
+------
+100_medium_diff_compare
+------
+Real time: 0.310000
+System time: 0.010000
+User time: 0.030000
+------
+100_medium_diff_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+100_medium_diff_compare_remove
+------
+Real time: 0.290000
+System time: 0.010000
+User time: 0.030000
+------
+5_big_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_compare_remove
+------
+Real time: 0.020000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare
+------
+Real time: 0.150000
+System time: 0.000000
+User time: 0.020000
+------
+50_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare_remove
+------
+Real time: 0.170000
+System time: 0.010000
+User time: 0.010000
+------
+100_big_diff_compare
+------
+Real time: 0.330000
+System time: 0.020000
+User time: 0.040000
+------
+100_big_diff_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+100_big_diff_compare_remove
+------
+Real time: 0.310000
+System time: 0.020000
+User time: 0.030000
+------
+DYNAMIC LIBRARY:
+
+5_small_diff_compare
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_small_diff_compare_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare
+------
+Real time: 0.150000
+System time: 0.010000
+User time: 0.000000
+------
+50_small_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_small_diff_compare_remove
+------
+Real time: 0.130000
+System time: 0.010000
+User time: 0.000000
+------
+100_small_diff_compare
+------
+Real time: 0.290000
+System time: 0.020000
+User time: 0.010000
+------
+100_small_diff_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+100_small_diff_compare_remove
+------
+Real time: 0.280000
+System time: 0.010000
+User time: 0.020000
+------
+5_medium_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_medium_diff_compare_remove
+------
+Real time: 0.020000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare
+------
+Real time: 0.170000
+System time: 0.010000
+User time: 0.010000
+------
+50_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_medium_diff_compare_remove
+------
+Real time: 0.160000
+System time: 0.010000
+User time: 0.010000
+------
+100_medium_diff_compare
+------
+Real time: 0.330000
+System time: 0.020000
+User time: 0.030000
+------
+100_medium_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.010000
+------
+100_medium_diff_compare_remove
+------
+Real time: 0.300000
+System time: 0.010000
+User time: 0.030000
+------
+5_big_diff_compare
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+5_big_diff_compare_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare
+------
+Real time: 0.170000
+System time: 0.000000
+User time: 0.020000
+------
+50_big_diff_remove
+------
+Real time: 0.000000
+System time: 0.000000
+User time: 0.000000
+------
+50_big_diff_compare_remove
+------
+Real time: 0.160000
+System time: 0.000000
+User time: 0.020000
+------
+100_big_diff_compare
+------
+Real time: 0.350000
+System time: 0.020000
+User time: 0.040000
+------
+100_big_diff_remove
+------
+Real time: 0.010000
+System time: 0.000000
+User time: 0.010000
+------
+100_big_diff_compare_remove
+------
+Real time: 0.320000
+System time: 0.010000
+User time: 0.050000
+------
