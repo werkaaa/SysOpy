@@ -21,20 +21,20 @@ void generate_record(char * buf, int record_length){
 }
 
 char * get_path(char * name){
-    char * path = calloc(6 + sizeof(name), sizeof(char));
+    char * path = (char*)calloc(6 + strlen(name), sizeof(char));
     strcat(path, "files/");
     strcat(path, name);
     return path;
 }
 
 void generate_lib(char * name, int records_number, int record_length){
-    char * path = calloc(6 + sizeof(name), sizeof(char));
+    char * path = (char*)calloc(6 + strlen(name), sizeof(char));
     strcat(path, "files/");
     strcat(path, name);
     printf("%s", path);
     FILE * fp = fopen(path, "w");
 
-    char * buf = calloc(record_length+1, sizeof(char));
+    char * buf = (char*)calloc(record_length+1, sizeof(char));
     srand(time(0));
 
     for(int i = 0; i<records_number; i++){
@@ -51,7 +51,7 @@ void generate_sys(char * name, int records_number, int record_length){
     printf("%s", path);
     int fd = open(path, O_WRONLY|O_CREAT); //create write-only file //this doesn't work
 
-    char * buf = calloc(record_length+1, sizeof(char));
+    char * buf = (char*)calloc(record_length+1, sizeof(char));
     srand(time(0));
 
     for(int i = 0; i<records_number; i++){
@@ -77,8 +77,8 @@ void swap_lib(FILE * fp, int i, int j, int record_length, char * pointer_0, char
 
 int partition_lib(FILE * fp, int low, int high, int record_length){
 
-    char * pivot = calloc(record_length, sizeof(char));
-    char * pointer = calloc(record_length, sizeof(char));
+    char * pivot = (char*)calloc(record_length, sizeof(char));
+    char * pointer = (char*)calloc(record_length, sizeof(char));
 
     int i = high+1;
     for(int j = high; j>=low; j--){
@@ -133,8 +133,8 @@ void swap_sys(int fd, int i, int j, int record_length, char * pointer_0, char * 
 
 int partition_sys(int fd, int low, int high, int record_length){
 
-    char * pivot = calloc(record_length, sizeof(char));
-    char * pointer = calloc(record_length, sizeof(char));
+    char * pivot = (char*)calloc(record_length, sizeof(char));
+    char * pointer = (char*)calloc(record_length, sizeof(char));
 
     int i = high+1;
     for(int j = high; j>=low; j--){
@@ -176,7 +176,7 @@ void sort_sys(char * name, int records_number, int record_length){
 void copy_sys(char * name_1, char * name_2, int records_number, int record_length){
     int fd_1 = open(get_path(name_1), O_RDONLY);
     int fd_2 = open(get_path(name_2), O_WRONLY);
-    char * record = calloc(record_length, sizeof(char));
+    char * record = (char*)calloc(record_length, sizeof(char));
 
     for(int i = 0; i<records_number; i++){
         read(fd_1, record, record_length+1);
@@ -190,7 +190,7 @@ void copy_sys(char * name_1, char * name_2, int records_number, int record_lengt
 void copy_lib(char * name_1, char * name_2, int records_number, int record_length){
     FILE * fp_1 = fopen(get_path(name_1), "r");
     FILE * fp_2 = fopen(get_path(name_2), "w");
-    char * record = calloc(record_length, sizeof(char));
+    char * record = (char*)calloc(record_length, sizeof(char));
 
     for(int i = 0; i<records_number; i++){
         fread(record, sizeof(char), record_length+1, fp_1);
@@ -223,8 +223,8 @@ void stop_timer(FILE * file){
 }
 
 int main(int argc, char **argv){
-    start_cpu = calloc(1, sizeof(struct tms));
-    end_cpu = calloc(1, sizeof(struct tms));
+    start_cpu = (struct tms *)calloc(1, sizeof(struct tms));
+    end_cpu = (struct tms *)calloc(1, sizeof(struct tms));
 
     if(argc<=1){
         printf("You haven't entered the arguments\n");

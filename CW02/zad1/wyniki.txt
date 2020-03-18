@@ -11,13 +11,13 @@ User time: 0.000000
 ------
 sort using system functions
 ------
-System time: 0.050000
+System time: 0.070000
 User time: 0.010000
 ------
 sort using library functions
 ------
-System time: 0.020000
-User time: 0.010000
+System time: 0.030000
+User time: 0.020000
 ------
 -----5000 records of 1 characters-----
 copy using system functions
@@ -32,13 +32,13 @@ User time: 0.000000
 ------
 sort using system functions
 ------
-System time: 0.670000
-User time: 0.230000
+System time: 0.860000
+User time: 0.290000
 ------
 sort using library functions
 ------
-System time: 0.290000
-User time: 0.170000
+System time: 0.260000
+User time: 0.220000
 ------
 -----1000 records of 4 characters-----
 copy using system functions
@@ -74,13 +74,13 @@ User time: 0.000000
 ------
 sort using system functions
 ------
-System time: 0.230000
-User time: 0.050000
+System time: 0.220000
+User time: 0.060000
 ------
 sort using library functions
 ------
-System time: 0.210000
-User time: 0.080000
+System time: 0.170000
+User time: 0.110000
 ------
 -----1000 records of 512 characters-----
 copy using system functions
@@ -95,18 +95,18 @@ User time: 0.000000
 ------
 sort using system functions
 ------
-System time: 0.040000
+System time: 0.050000
 User time: 0.000000
 ------
 sort using library functions
 ------
-System time: 0.050000
-User time: 0.000000
+System time: 0.040000
+User time: 0.020000
 ------
 -----5000 records of 512 characters-----
 copy using system functions
 ------
-System time: 0.000000
+System time: 0.010000
 User time: 0.000000
 ------
 copy using library functions
@@ -116,13 +116,13 @@ User time: 0.000000
 ------
 sort using system functions
 ------
-System time: 0.270000
-User time: 0.050000
+System time: 0.260000
+User time: 0.040000
 ------
 sort using library functions
 ------
-System time: 0.310000
-User time: 0.140000
+System time: 0.280000
+User time: 0.110000
 ------
 -----1000 records of 1024 characters-----
 copy using system functions
@@ -142,8 +142,8 @@ User time: 0.000000
 ------
 sort using library functions
 ------
-System time: 0.050000
-User time: 0.020000
+System time: 0.070000
+User time: 0.010000
 ------
 -----5000 records of 1024 characters-----
 copy using system functions
@@ -153,18 +153,18 @@ User time: 0.000000
 ------
 copy using library functions
 ------
-System time: 0.000000
+System time: 0.010000
 User time: 0.000000
 ------
 sort using system functions
 ------
-System time: 0.240000
-User time: 0.050000
+System time: 0.270000
+User time: 0.060000
 ------
 sort using library functions
 ------
-System time: 0.320000
-User time: 0.100000
+System time: 0.330000
+User time: 0.120000
 ------
 -----1000 records of 4096 characters-----
 copy using system functions
@@ -179,8 +179,8 @@ User time: 0.000000
 ------
 sort using system functions
 ------
-System time: 0.050000
-User time: 0.010000
+System time: 0.060000
+User time: 0.000000
 ------
 sort using library functions
 ------
@@ -190,7 +190,7 @@ User time: 0.020000
 -----5000 records of 4096 characters-----
 copy using system functions
 ------
-System time: 0.020000
+System time: 0.010000
 User time: 0.000000
 ------
 copy using library functions
@@ -200,13 +200,13 @@ User time: 0.000000
 ------
 sort using system functions
 ------
-System time: 0.400000
-User time: 0.070000
+System time: 0.350000
+User time: 0.060000
 ------
 sort using library functions
 ------
-System time: 0.510000
-User time: 0.170000
+System time: 0.470000
+User time: 0.140000
 ------
 -----1000 records of 8192 characters-----
 copy using system functions
@@ -221,18 +221,18 @@ User time: 0.000000
 ------
 sort using system functions
 ------
-System time: 0.100000
-User time: 0.000000
+System time: 0.080000
+User time: 0.010000
 ------
 sort using library functions
 ------
-System time: 0.130000
-User time: 0.010000
+System time: 0.090000
+User time: 0.020000
 ------
 -----5000 records of 8192 characters-----
 copy using system functions
 ------
-System time: 0.040000
+System time: 0.020000
 User time: 0.000000
 ------
 copy using library functions
@@ -242,11 +242,11 @@ User time: 0.000000
 ------
 sort using system functions
 ------
-System time: 0.610000
-User time: 0.070000
+System time: 0.500000
+User time: 0.080000
 ------
 sort using library functions
 ------
-System time: 0.740000
-User time: 0.180000
+System time: 0.690000
+User time: 0.070000
 ------
