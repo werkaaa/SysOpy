@@ -8,6 +8,8 @@
 #include <unistd.h>
 #include <time.h>
 #include <sys/wait.h>
+#include <sys/resource.h>
+#include <sys/time.h>
 
 int get_k_number(char * line, int k){
     char * number;
@@ -127,6 +129,7 @@ int prepare_file(char * path_out, int k, int n, int m){
 
     if (f_out == NULL)
         exit(EXIT_FAILURE);
+
 
     int field_size = 6+n/10+1; //maksymalnie 6-cyfrowa liczba z pojedyńczego mnożenia, każde 10 takich liczb to nowe miejsce i przecinek
     char * field = (char *)calloc(field_size, sizeof(char));
@@ -329,9 +332,11 @@ int multiply_matrices(char ** A, char ** B, char ** C, int pairs_number, int i, 
             delta = start;
         }
 
+
         for(int c = start; c<=end; c++){
 
             multiply_unit(A[p], B[p], C[p], c, delta, field_size, k, m, mode);
+
 
             if((int)((clock()-start_time)/CLOCKS_PER_SEC)>=time_limit){
                 return (multiplications);
@@ -346,7 +351,7 @@ int multiply_matrices(char ** A, char ** B, char ** C, int pairs_number, int i, 
 
 int main(int argc, char ** argv){
 
-    if(argc<5){
+    if(argc<7){
         printf("You specified too few arguments!");
         return 1;
     }
@@ -355,10 +360,13 @@ int main(int argc, char ** argv){
     int N = atoi(argv[2]);
     time_t t = atoi(argv[3]);
     char * mode = argv[4];
+    int cpu_time_limit = atoi(argv[5]);
+    long virtual_memory_limit = atoi(argv[6]);
 
     if(strcmp(mode, "one_file")!=0 && strcmp(mode, "more_files")!=0){
         printf("argument %s not known!", mode);
     }
+
 
     FILE * fp = fopen(list, "r");
     if(fp==NULL){
@@ -408,16 +416,52 @@ int main(int argc, char ** argv){
             children[i] = child_pid;
         }
         else{
+            //set max CPU time
+            struct rlimit * time_l = (struct rlimit *)calloc(1, sizeof(struct rlimit));
+            time_l->rlim_cur = cpu_time_limit;
+            time_l->rlim_max = cpu_time_limit;
+            setrlimit(RLIMIT_CPU, time_l);
+            free(time_l);
+
+            //set max virtual memory
+            struct rlimit * memory_l = (struct rlimit *)calloc(1, sizeof(struct rlimit));
+            memory_l->rlim_cur = virtual_memory_limit * (1 << 20);
+            memory_l->rlim_max = virtual_memory_limit * (1<<20);
+            setrlimit(RLIMIT_AS, memory_l);
+            free(memory_l);
+
             int multiplications = multiply_matrices(A, B, C, pairs_number, i, N, clock(), t, mode);
             exit(multiplications);
         }
     }
+    struct rusage * before = (struct rusage *)calloc(1, sizeof(struct rusage));
+    struct rusage * after = (struct rusage *)calloc(1, sizeof(struct rusage));
+    //struct rusage * from_wait = (struct rusage *)calloc(1, sizeof(struct rusage));
+    getrusage(RUSAGE_CHILDREN, after);
+
+    struct timeval diff_stime;
+    struct timeval diff_utime;
 
     for(int i = 0; i < N; i++) {
+        memcpy(before, after, sizeof(struct rusage));
         int status;
+
+        //wait4(children[i], &status, 0, from_wait); this solution is also possible
+
         waitpid(children[i], &status, 0);
+        getrusage(RUSAGE_CHILDREN, after); //RUSAGE_CHILDREN - sum of successors' times
+
+        timersub(&after->ru_utime, &before->ru_utime, &diff_utime);
+        timersub(&after->ru_stime, &before->ru_stime, &diff_stime);
+
         printf("Process %d done %d multiplying operations\n", children[i], WEXITSTATUS(status));
+        //printf("~User CPU time: %ld seconds %ld microseconds\n~System CPU time: %ld seconds %ld microseconds\n",
+        // from_wait->ru_utime.tv_sec, from_wait->ru_utime.tv_usec, from_wait->ru_stime.tv_sec, from_wait->ru_stime.tv_usec);
+        printf("~User CPU time: %ld seconds %ld microseconds\n~System CPU time: %ld seconds %ld microseconds\n",
+                diff_utime.tv_sec, diff_utime.tv_usec, diff_stime.tv_sec, diff_stime.tv_usec);
     }
+    free(before);
+    free(after);
 
 
     if(strcmp(mode, "one_file")==0) {
@@ -442,6 +486,7 @@ int main(int argc, char ** argv){
                 int k, m, n;
                 get_sizes(A[i], B[i], &k, &n, &m);
 
+
                 for(int j = 0; j<min(m, N); j++){
                     args[j+3] = get_pid_path(C[i], children[j]);
                     delete_redundancy(args[j+3]);
@@ -460,6 +505,7 @@ int main(int argc, char ** argv){
         }
 
     }
+
     free(children);
 
     return 0;

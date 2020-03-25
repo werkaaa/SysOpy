@@ -1,17 +1,19 @@
 CC = gcc -Wall
-MIN_SIZE = 30
-MAX_SIZE = 50
-N = 100
-P = 10
-T = 5
+MIN_SIZE = 20
+MAX_SIZE = 30
+N = 5
+P = 30
+T = 1
+T_LIMIT = 1
+M_LIMIT = 1
 
 all:
 	make build
 	make -B generator
-	./macierz files/list $(P) $(T) one_file
+	./macierz files/list $(P) $(T) one_file $(T_LIMIT) $(M_LIMIT)
 	make -B test
 	rm -f files/out*
-	./macierz files/list $(P) $(T) more_files
+	./macierz files/list $(P) $(T) more_files $(T_LIMIT) $(M_LIMIT)
 	make -B test
 	rm -f -r tmp
 	rm -f files/list
