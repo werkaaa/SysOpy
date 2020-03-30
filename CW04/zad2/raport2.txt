@@ -1,0 +1,3 @@
+Proces utworzony przy użyciu funkcji fork dziedziczy ignorowanie sygnału, handler oraz maskę blokowanych sygnałów.
+Nie dziedziczy jednak oczekujących, wyłapanych przez rodzica sygnałów.
+Ignorowanie sygnału, maska i oczekujące sygnały są zachowywane po wywołaniu funkcji exec.
