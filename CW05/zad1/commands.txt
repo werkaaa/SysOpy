@@ -1,0 +1,3 @@
+cat test.txt | head -5 | tail -1
+cat test.txt | head -4 | tail -2
+cat test.txt | tail -5 | head -1
