@@ -5,12 +5,13 @@
 #ifndef SYSOPY_HEADER_H
 #define SYSOPY_HEADER_H
 #define MAX_CLIENTS 4
+#define NAME_SIZE 5
 #define MAX_MSG_SIZE 128
 
-const int SERVER_GEN = 1;
+const char * SERVER_FILE_NAME = "/server";
 
 typedef enum m_type {
-    STOP = 1, DISCONNECT = 2, LIST = 3, INIT = 4, CONNECT = 5, CHAT = 6
+    STOP = 6, DISCONNECT = 5, LIST = 4, INIT = 3, CONNECT = 2, CHAT = 1
 } m_type;
 
 typedef struct message_buf {

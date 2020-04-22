@@ -193,7 +193,7 @@ int main(){
     srand(time(NULL));
 
     key_t client_queue_key = abs(ftok(getenv("HOME"), rand() % 254 + 2));
-    client_queue_id = msgget(client_queue_key, IPC_CREAT | 0666); //create queue and set permissions
+    client_queue_id = msgget(client_queue_key, IPC_CREAT | 0666);
     if(client_queue_id == -1){
         error("Problem with queue creation!");
     }

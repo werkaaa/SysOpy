@@ -49,7 +49,9 @@ void handle_message(message_buf rbuf){
         case INIT:
             printf("Server received INIT\n");
 
-            client_queue_id = msgget(rbuf.queue_key, 0); //na pewno ta flaga?
+            client_queue_id = msgget(rbuf.queue_key, 0);
+            if(client_queue_id == -1)
+                error("Problem with connection!\n");
             client_id = get_next_client_id();
             sbuf.m_type = INIT;
             if(client_id == -1){
@@ -59,14 +61,8 @@ void handle_message(message_buf rbuf){
             }
             else {
 
-                if (client_queue_id == -1) {
-                    printf("Problem with connection! %d\n", errno);
-                    clients_counter--;
-                    break;
-                }
                 clients[client_id] = 1;
                 clients_queues[client_id] = rbuf.queue_key;
-
 
                 sbuf.client_id = client_id;
             }
@@ -132,7 +128,7 @@ void handle_message(message_buf rbuf){
             break;
 
         default:
-
+            printf("Server received not known message!\n");
             break;
     }
 }
@@ -181,7 +177,7 @@ int main(){
     for(int i = 0; i<MAX_CLIENTS; i++) clients[i] = 0;
     for(int i = 0; i<MAX_CLIENTS; i++) clients_queues[i] = -1;
 
-    key_t queue_key = ftok(getenv("HOME"), SERVER_GEN); //małą liczbę trzeba z pliku
+    key_t queue_key = ftok(getenv("HOME"), SERVER_GEN);
     server_queue_id = msgget(queue_key, IPC_CREAT | 0666);
     if(server_queue_id == -1){
         error("Problem with queue creation!\n");
