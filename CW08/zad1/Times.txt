@@ -1,0 +1,104 @@
+./program 1 sign brain_398.ascii.pgm histograms/hist_sign_1
+Mode: sign, Threads: 1
+        Thread: 0, Thread ID: 140238028392192, Time: 2384μs
+
+        Time total: 2660μs
+
+./program 1 block brain_398.ascii.pgm histograms/hist_block_1
+Mode: block, Threads: 1
+        Thread: 0, Thread ID: 140656040441600, Time: 2321μs
+
+        Time total: 2710μs
+
+./program 1 interleaved brain_398.ascii.pgm histograms/hist_interleaved_1
+Mode: interleaved, Threads: 1
+        Thread: 0, Thread ID: 140305141225216, Time: 2269μs
+
+        Time total: 2525μs
+
+./program 2 sign brain_398.ascii.pgm histograms/hist_sign_2
+Mode: sign, Threads: 2
+        Thread: 0, Thread ID: 139914307516160, Time: 4286μs
+        Thread: 1, Thread ID: 139914299123456, Time: 3212μs
+
+        Time total: 4391μs
+
+./program 2 block brain_398.ascii.pgm histograms/hist_block_2
+Mode: block, Threads: 2
+        Thread: 0, Thread ID: 140040413402880, Time: 1593μs
+        Thread: 1, Thread ID: 140040405010176, Time: 1732μs
+
+        Time total: 1895μs
+
+./program 2 interleaved brain_398.ascii.pgm histograms/hist_interleaved_2
+Mode: interleaved, Threads: 2
+        Thread: 0, Thread ID: 140223767312128, Time: 1856μs
+        Thread: 1, Thread ID: 140223758919424, Time: 1851μs
+
+        Time total: 2117μs
+
+./program 4 sign brain_398.ascii.pgm histograms/hist_sign_4
+Mode: sign, Threads: 4
+        Thread: 0, Thread ID: 139968237328128, Time: 3632μs
+        Thread: 1, Thread ID: 139968228935424, Time: 3240μs
+        Thread: 2, Thread ID: 139968220542720, Time: 5418μs
+        Thread: 3, Thread ID: 139968212150016, Time: 3101μs
+
+        Time total: 6083μs
+
+./program 4 block brain_398.ascii.pgm histograms/hist_block_4
+Mode: block, Threads: 4
+        Thread: 0, Thread ID: 139808457692928, Time: 873μs
+        Thread: 1, Thread ID: 139808449300224, Time: 922μs
+        Thread: 2, Thread ID: 139808440907520, Time: 982μs
+        Thread: 3, Thread ID: 139808432514816, Time: 983μs
+
+        Time total: 1179μs
+
+./program 4 interleaved brain_398.ascii.pgm histograms/hist_interleaved_4
+Mode: interleaved, Threads: 4
+        Thread: 0, Thread ID: 140509761058560, Time: 1509μs
+        Thread: 1, Thread ID: 140509752665856, Time: 1517μs
+        Thread: 2, Thread ID: 140509744273152, Time: 1416μs
+        Thread: 3, Thread ID: 140509735880448, Time: 857μs
+
+        Time total: 2457μs
+
+./program 8 sign brain_398.ascii.pgm histograms/hist_sign_8
+Mode: sign, Threads: 8
+        Thread: 0, Thread ID: 139929551849216, Time: 3462μs
+        Thread: 1, Thread ID: 139929543456512, Time: 3001μs
+        Thread: 2, Thread ID: 139929535063808, Time: 3037μs
+        Thread: 3, Thread ID: 139929526671104, Time: 2853μs
+        Thread: 4, Thread ID: 139929518278400, Time: 2889μs
+        Thread: 5, Thread ID: 139929509885696, Time: 2796μs
+        Thread: 6, Thread ID: 139929501492992, Time: 4092μs
+        Thread: 7, Thread ID: 139929493100288, Time: 2891μs
+
+        Time total: 7196μs
+
+./program 8 block brain_398.ascii.pgm histograms/hist_block_8
+Mode: block, Threads: 8
+        Thread: 0, Thread ID: 140338548242176, Time: 744μs
+        Thread: 1, Thread ID: 140338539849472, Time: 726μs
+        Thread: 2, Thread ID: 140338531456768, Time: 612μs
+        Thread: 3, Thread ID: 140338523064064, Time: 498μs
+        Thread: 4, Thread ID: 140338514671360, Time: 484μs
+        Thread: 5, Thread ID: 140338506278656, Time: 511μs
+        Thread: 6, Thread ID: 140338497885952, Time: 421μs
+        Thread: 7, Thread ID: 140338489493248, Time: 551μs
+
+        Time total: 2018μs
+
+./program 8 interleaved brain_398.ascii.pgm histograms/hist_interleaved_8
+Mode: interleaved, Threads: 8
+        Thread: 0, Thread ID: 140206734894848, Time: 967μs
+        Thread: 1, Thread ID: 140206726502144, Time: 967μs
+        Thread: 2, Thread ID: 140206718109440, Time: 757μs
+        Thread: 3, Thread ID: 140206709716736, Time: 533μs
+        Thread: 4, Thread ID: 140206701324032, Time: 974μs
+        Thread: 5, Thread ID: 140206692931328, Time: 968μs
+        Thread: 6, Thread ID: 140206684538624, Time: 1906μs
+        Thread: 7, Thread ID: 140206676145920, Time: 854μs
+
+        Time total: 3259μs
