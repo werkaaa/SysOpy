@@ -37,7 +37,7 @@ void start_server(){
     inet_sock_fd = socket(AF_INET, SOCK_STREAM, 0);
     if(inet_sock_fd == -1) error("Problem with socket file descriptor!");
     if(bind(inet_sock_fd, (struct sockaddr *)&inet_sock, sizeof(inet_sock)) == -1) error("Problem with binding!");
-    if (listen(inet_sock_fd, MAX_CLIENTS_NUMBER) == -1) error("Problem with listening set!");
+    if(listen(inet_sock_fd, MAX_CLIENTS_NUMBER) == -1) error("Problem with listening set!");
 
     //unix socket
 
@@ -45,9 +45,9 @@ void start_server(){
     strcpy(unix_sock.sun_path, socket_path);
 
     unix_sock_fd = socket(AF_UNIX, SOCK_STREAM, 0);
-    if(inet_sock_fd == -1) error("Problem with socket file descriptor!");
+    if(unix_sock_fd == -1) error("Problem with socket file descriptor!");
     if(bind(unix_sock_fd, (struct sockaddr *)&unix_sock, sizeof(unix_sock)) == -1) error("Problem with binding!");
-    if (listen(unix_sock_fd, MAX_CLIENTS_NUMBER) == -1) error("Problem with listening set!");
+    if(listen(unix_sock_fd, MAX_CLIENTS_NUMBER) == -1) error("Problem with listening set!");
 
 }
 
@@ -114,7 +114,11 @@ int get_new_login(int sock_fd) {
 void remove_login(int fd){
     for (int i = 0; i < MAX_CLIENTS_NUMBER; i++) {
         if (clients[i] && clients[i]->fd == fd) {
+            free(clients[i]);
             clients[i] = NULL;
+            free(games[i]);
+            games[i] = NULL;
+            signs[i] = '_';
         }
     }
 }
@@ -202,19 +206,22 @@ void * process_messaging() {
                         if(game_move==-1) send_message(clients[i]->fd, MSG, "Position taken, you lost turn");
 
                         char* winner = check_winner(games[i]);
-
+                        char *board_state = get_board_state(games[i]);
                         if(strcmp(winner, "_")==0) {
-                            char *board_state = get_board_state(games[i]);
                             send_message(clients[games[i]->player1]->fd, GAME_MOVE, board_state);
                             send_message(clients[games[i]->player2]->fd, GAME_MOVE, board_state);
                             free(board_state);
                         }
                         else if(strcmp(winner, "T")==0) {
+                            send_message(clients[games[i]->player1]->fd, MSG, board_state);
+                            send_message(clients[games[i]->player2]->fd, MSG, board_state);
                             send_message(clients[games[i]->player1]->fd, GAME_TIE, "Game ended with a tie");
                             send_message(clients[games[i]->player2]->fd, GAME_TIE, "Game ended with a tie");
                             break;
                         }
                         else {
+                            send_message(clients[games[i]->player1]->fd, MSG, board_state);
+                            send_message(clients[games[i]->player2]->fd, MSG, board_state);
                             send_message(clients[games[i]->player1]->fd, GAME_WINNER, winner);
                             send_message(clients[games[i]->player2]->fd, GAME_WINNER, winner);
                             break;
